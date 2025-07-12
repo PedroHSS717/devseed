@@ -1,6 +1,7 @@
 
-
+import Link from 'next/link';
 import React from "react";
+import Image from 'next/image';
 
 export default function Home() {
   const teamMembers = [
@@ -48,22 +49,22 @@ export default function Home() {
           Projeto de extensão para ajudar jovens de escolas públicas do Ceará a terem acesso a conteúdo introdutório de programação.
         </p>
         <div className="space-x-6">
-          <a
+          <Link
             href="https://www.notion.so/Introdu-o-Fundamentos-de-Programa-o-1baec26405b580a18a80eb9828d5a51a?source=copy_link"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-green-200 text-green-200 px-4 py-2 rounded-md font-semibold hover:bg-green-200 hover:text-black transition-colors duration-200"
           >
             Notion
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://example.com/platform2"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-green-200 text-green-200 px-4 py-2 rounded-md font-semibold hover:bg-green-200 hover:text-black transition-colors duration-200"
           >
             Discord
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -79,7 +80,7 @@ export default function Home() {
               className="flex flex-col items-center bg-gray-900 rounded-lg p-6"
             >
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-green-200">
-                <img
+                <Image
                   src={photo}
                   alt={name}
                   className="w-full h-full object-cover"
