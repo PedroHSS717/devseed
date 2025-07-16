@@ -25,10 +25,17 @@ export default function Home() {
     },
     {
       name: "Jeová Alisson",
-      role: "Designer",
+      role: "Comunicação",
       photo:
         "/img/jeova-alisson.jpeg",
     },
+    {
+      name: "Daniel Fernandes",
+      role: "Logística",
+      photo:
+        "/img/daniel-fernandes.jpeg",
+    },
+  
   ];
 
   return (
@@ -73,16 +80,17 @@ export default function Home() {
         <h2 className="text-3xl font-semibold text-center mb-12">
           Responsáveis pelo Projeto
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-9 max-w-7xl mx-auto">
           {teamMembers.map(({ name, role, photo }) => (
             <div
               key={name}
               className="flex flex-col items-center bg-gray-900 rounded-lg p-6"
             >
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-green-200">
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-green-200 relative">
                 <Image
                   src={photo}
                   alt={name}
+                  fill
                   className="w-full h-full object-cover"
                 />
               </div>
