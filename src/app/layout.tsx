@@ -1,8 +1,7 @@
-import React, { ReactNode } from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Link from 'next/link';
-
+import { ReactNode } from "react";
+import Navbar from "../app/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,7 +9,6 @@ export const metadata = {
   title: "DevSeed",
   description: "Plantando o futuro da programação",
 };
-
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -20,35 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pt-BR">
       <body className={`${inter.className} bg-black text-white scroll-smooth`}>
-        <header className="flex justify-between items-center px-6 py-4 border-b border-gray-700">
-          <div className="text-2xl font-bold text-green-200">DevSeed</div>
-          <nav className="space-x-6">
-            <Link
-              href="/"
-              className="text-white hover:text-green-200 transition-colors duration-200"
-            >
-              Home
-            </Link>
-            <Link
-              href="/sobre"
-              className="text-white hover:text-green-200 transition-colors duration-200"
-            >
-              Sobre
-            </Link>
-            <Link
-              href="#contato"
-              className="text-white hover:text-green-200 transition-colors duration-200"
-            >
-              Contato
-            </Link>
-          </nav>
-          <div className="space-x-4">
-            
-            <Link href="https://www.instagram.com/devseed.ufc/" className="border border-green-200 text-green-200 px-4 py-2 rounded-md font-semibold hover:bg-green-200 hover:text-black transition-colors duration-200" >
-              Instagram
-            </Link>
-          </div>
-        </header>
+        <Navbar />
 
         <main className="min-h-[calc(100vh-72px)]">{children}</main>
 

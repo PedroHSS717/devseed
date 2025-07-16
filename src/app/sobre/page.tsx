@@ -1,6 +1,7 @@
 
 
 import React from "react";
+import Link from 'next/link';
 
 export default function Sobre() {
   return (
@@ -157,12 +158,12 @@ export default function Sobre() {
           Junte-se a nós nesta missão de democratizar o ensino de programação e transformar vidas através da tecnologia.
         </p>
         <div className="space-x-4">
-          <button className="bg-green-200 text-black px-8 py-3 rounded-md font-semibold hover:bg-lime-500 transition-colors duration-200">
-            Seja um Voluntário
-          </button>
-          <button className="border border-green-200 text-green-200 px-8 py-3 rounded-md font-semibold hover:bg-green-200 hover:text-black transition-colors duration-200">
-            Saiba Mais
-          </button>
+          <Link href="https://chat.whatsapp.com/LhOQHFML7tSLKEtYeE3nCt" className="bg-green-200 text-black px-8 py-3 rounded-md font-semibold hover:bg-lime-500 transition-colors duration-200">
+            Seja voluntário! 
+          </Link>
+          <Link href="https://www.instagram.com/devseed.ufc/" className="border border-green-200 text-green-200 px-8 py-3 rounded-md font-semibold hover:bg-green-200 hover:text-black transition-colors duration-200">
+            Acesse nosso Instagram
+          </Link>
         </div>
       </section>
     </div>

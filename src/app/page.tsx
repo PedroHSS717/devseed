@@ -57,7 +57,7 @@ export default function Home() {
         </p>
         <div className="space-x-6">
           <Link
-            href="https://www.notion.so/Introdu-o-Fundamentos-de-Programa-o-1baec26405b580a18a80eb9828d5a51a?source=copy_link"
+            href="https://same-creator-347.notion.site/Introdu-o-Fundamentos-de-Programa-o-1baec26405b580a18a80eb9828d5a51a"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-green-200 text-green-200 px-4 py-2 rounded-md font-semibold hover:bg-green-200 hover:text-black transition-colors duration-200"
@@ -65,7 +65,7 @@ export default function Home() {
             Notion
           </Link>
           <Link
-            href="https://example.com/platform2"
+            href="https://discord.gg/57e65Ny7"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-green-200 text-green-200 px-4 py-2 rounded-md font-semibold hover:bg-green-200 hover:text-black transition-colors duration-200"
